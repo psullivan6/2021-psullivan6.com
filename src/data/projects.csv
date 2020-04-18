@@ -1,0 +1,56 @@
+featured,slug,title,link,agency,client,type,role,tech-stack,excerpt,description,why,process,challenges,takeaways
+TRUE,bacon-insider,Bacon Insider Promotion,,Struck,Jack in the Box,Promotion,,"Vanilla JS
+Ruby on Rails
+Haml
+CoffeeScript
+SCSS
+Heroku",,,,,Launching an immersive landing page on Super Bowl Sunday with millions of dollars in commercials driving to the website.,
+,jitb,Jackinthebox.com,https://www.jackinthebox.com/,Struck,Jack in the Box,Marketing,Developer,"Vanilla JS
+Ruby on Rails
+Haml
+CoffeeScript
+SCSS
+Heroku",,Store Locator page and map clustering functionality,,,,
+TRUE,nas,,,Struck,Nick Animation Studio,Marketing,,"Bower.io
+Gulp
+PHP / Laravel
+Jade (now Pug)
+SCSS
+RequireJS
+Vanilla JS",,,,,,
+TRUE,soundboard,Soundboard Promotion,,Union,Camel,Promotion,,"Laravel
+React
+Vanilla JS",,"see .agency site, also https://github.com/psullivan6/open-sound",,,,
+,ttd,Through the Decades Promotion,,Union,Camel,Promotion,,"Styled components
+Styled system
+React
+Craft CMS",,,,,,
+,ctm,Crush the Moment Promotion,,Union,Camel,Promotion,,,,Perhaps not include,,,,
+,starters,Project Starters,,,,Starter,,,,"Link to all the relevant starters, highlight react three fiber, system, and maybe 1 more that's recent",,,,
+,portfolios,Portfolio Iterations,,,,,,,,All the various in-progress versions of my portfolio,,,,
+,gst,Guided Selling Tool,,Union,GameTime,,,Craft Commerce,,"Short timeline, lots of custom form functionality",,,,
+,presflow,Presentation Tool,,Union,ACBJ,,,"Next.js
+Now.sh
+Yarn workspaces
+Typescript
+React
+REST API integration
+PHP
+Craft CMS
+CI/CD
+React Router",,,,,,
+,ar-experiment,AR Experiment,,Union,Innovation,,,,,,,,,
+,process,Process + Planning,,Union,Union,,,,,"Git Workflow, weekly F/E Focus, kanban template, GitLab workflow, other write-ups",,,,
+,design-system,Design System,,Union,Playcore,,,Material UI,,,,,,
+TRUE,logos,Championship Logos,,,Pac-12,,,,,"Show all the logos, talk about the story of how I got signed on",,,,
+,grand-america,Landing Page,,Struck,Grand America Hotels & Resorts,,,,,,,,,
+,struck-com,struck.com,,Struck,Struck,,,"Node JS
+MongoDB
+BackboneJS
+RequireJS
+SCSS
+Heroku",,,,,,
+,run-map,Nike Map,,,,,,,,"Built in a weekend, idea to reality quickly, get outside more now",,,,
+,3d,Misc. 3D projects,,,,,,,,"cyber-fiber, starter-r3f, next-three-fiber",,,,
+,color-study,Color Study,,,,,,,,"large data set, filtering, interaction with array-based data",,,,
+,split-video,Split Video,,,Experiments,Experiment,,,,,,,,
