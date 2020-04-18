@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "parse": "node ./scripts/parse.js"
   },
   "dependencies": {
     "next": "9.3.5",
+    "node-fetch": "^2.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "csvtojson": "^2.0.10"
   }
 }

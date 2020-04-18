@@ -8,12 +8,14 @@ export default function Home() {
   return (
     <Page>
       <section>
-        <h1>Patrick Sullivan</h1>
-        <p>
-          Brief about me description. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. A reprehenderit nobis maxime aspernatur quas totam
-          quae.
-        </p>
+        <h1>
+          <span>Hey I&rsquo;m Patrick,</span>
+          <br />
+          <span>
+            I&rsquo;m a Tech Lead in Charlotte, NC and I build awesome websites
+            and lead talented Developers.
+          </span>
+        </h1>
         <Link href="/about">
           <a>More About Me</a>
         </Link>

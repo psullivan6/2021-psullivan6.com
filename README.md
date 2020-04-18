@@ -10,3 +10,16 @@
 5. Create basic style guide and associated theme
 6. Create and style components as needed, start building w/in style-guide
 7. Build out pages with those components, further styling as needed
+
+### Any Phase
+
+- Add analytics
+
+## "CMS"
+
+Leverage Google Sheets since it's easy, free, and serves my needs
+
+1. Update [Google Sheet](https://docs.google.com/spreadsheets/d/1uM-R8iQ3AFeGzHZJJPE_vWZxuGrpDipg_q2GnsxN-ZQ/edit?usp=sharing)
+2. Export as `.csv` into the `src/data` directory
+3. Run the `yarn parse` command
+4. Voila

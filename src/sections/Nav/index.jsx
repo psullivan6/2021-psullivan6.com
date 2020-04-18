@@ -13,7 +13,7 @@ function Nav() {
 
         <li>
           <Link href="/about">
-            <a>About Us</a>
+            <a>About Me</a>
           </Link>
         </li>
 
