@@ -1,9 +1,6 @@
 import React from 'react';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
-
-// Sections
-import Nav from '../../src/sections/Nav';
+import Link from 'next/link';
 
 // Components
 import Page from '../../src/components/Page';
@@ -13,16 +10,14 @@ function ProjectPage() {
   const { id } = router.query;
 
   return (
-    <Page>
-      <Head>
-        <title>Project | Patrick Sullivan</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Nav />
-        <h1>Project Content Here for id: {id}</h1>
-      </main>
+    // [TODO] Make the title dynamic
+    <Page title="Project">
+      <header>
+        <Link href="/projects">
+          <a>Back to All</a>
+        </Link>
+      </header>
+      <h1>Project Content Here for id: {id}</h1>
     </Page>
   );
 }
