@@ -1,10 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 
+// Services
+import { get } from '../src/services/projects';
+
 // Components
 import Page from '../src/components/Page';
 
-export default function Home() {
+function HomePage({ projects }) {
   return (
     <Page>
       <section>
@@ -24,14 +27,14 @@ export default function Home() {
       <section>
         <h1>Projects</h1>
         <ul>
-          <li>
-            <Link href="/projects/123">
-              <a>Featured Project 1</a>
-            </Link>
-          </li>
-          <li>Featured Project 2</li>
-          <li>Featured Project 3</li>
-          <li>Featured Project 4</li>
+          {projects.map(({ slug, title }) => (
+            <li>
+              <Link href={`/projects/${slug}`}>
+                <a>{title}</a>
+              </Link>
+            </li>
+          ))}
+
           <li>
             <Link href="/projects">
               <a>See the Rest</a>
@@ -42,3 +45,15 @@ export default function Home() {
     </Page>
   );
 }
+
+export async function getStaticProps() {
+  const projects = (await get()).filter((project) => project.featured);
+
+  return {
+    props: {
+      projects,
+    },
+  };
+}
+
+export default HomePage;

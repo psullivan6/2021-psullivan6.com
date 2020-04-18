@@ -1,8 +1,8 @@
 import React from 'react';
-// import fetch from 'node-fetch';
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
+
+// Services
+import { get } from '../../src/services/projects';
 
 // Components
 import Page from '../../src/components/Page';
@@ -13,12 +13,11 @@ function ProjectsPage({ projects }) {
       <h1>Projects Content Here</h1>
 
       <ul>
-        {projects.map(({ slug, ...project }) => (
-          <li>
+        {projects.map(({ slug, title, ...project }) => (
+          <li key={slug}>
             <Link href={`/projects/${slug}`}>
-              <a>{slug}</a>
+              <a>{title}</a>
             </Link>
-            <pre>{JSON.stringify(project, null, 2)}</pre>
           </li>
         ))}
       </ul>
@@ -27,8 +26,7 @@ function ProjectsPage({ projects }) {
 }
 
 export async function getStaticProps() {
-  const jsonPath = path.join(process.cwd(), 'src/data/projects.json');
-  const projects = JSON.parse(fs.readFileSync(jsonPath));
+  const projects = await get();
 
   return {
     props: {
