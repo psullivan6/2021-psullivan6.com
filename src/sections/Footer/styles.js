@@ -5,7 +5,8 @@ import themeGet from '../../utilities/themeGet';
 
 export const FooterContainer = styled.footer`
   padding: ${themeGet('space.3')};
-  background-color: hsl(0, 0%, 96%);
+  background-color: ${themeGet('colors.grays.23')};
+  color: ${themeGet('colors.grays.13')};
 `;
 
 export const FooterLinks = styled.nav`
@@ -25,5 +26,13 @@ export const FooterLinks = styled.nav`
     li:not(:last-child) {
       margin-right: ${themeGet('space.2')};
     }
+  }
+`;
+
+export const FooterLink = styled.a`
+  color: ${themeGet('colors.grays.18')};
+
+  &:hover {
+    color: ${themeGet('colors.grays.14')};
   }
 `;

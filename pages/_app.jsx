@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 
 // Sections
@@ -23,6 +24,12 @@ function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;900&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <ThemeProvider theme={getTheme(colorScheme)}>
         <GlobalStyles />
         <Nav />

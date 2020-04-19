@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { colorSchemes } from '../../styles/theme';
+import { colorSchemes } from '../../styles/theme/colors';
 
 // Components
 import Box from '../Box';

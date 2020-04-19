@@ -25,6 +25,12 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${themeGet('colors.background')};
     color: ${themeGet('colors.text')};
     transition: background-color 0.25s ease, color 0.25s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  ::selection {
+    background-color: ${themeGet('colors.highlight')};
+    color: ${themeGet('colors.highlightText')};
   }
 `;
 
