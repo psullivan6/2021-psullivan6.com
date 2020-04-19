@@ -9,9 +9,13 @@
     "parse": "node ./scripts/parse.js"
   },
   "dependencies": {
+    "@styled-system/theme-get": "^5.1.2",
     "next": "9.3.5",
+    "polished": "^3.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.0",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "csvtojson": "^2.0.10"

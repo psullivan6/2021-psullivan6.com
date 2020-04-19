@@ -1,9 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
+// Styles
+import { NavContainer } from './styles';
+
 function Nav() {
   return (
-    <nav>
+    <NavContainer>
       <ul>
         <li>
           <Link href="/">
@@ -23,7 +26,7 @@ function Nav() {
           </Link>
         </li>
       </ul>
-    </nav>
+    </NavContainer>
   );
 }
 

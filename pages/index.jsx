@@ -28,7 +28,7 @@ function HomePage({ projects }) {
         <h1>Projects</h1>
         <ul>
           {projects.map(({ slug, title }) => (
-            <li>
+            <li key={slug}>
               <Link href={`/projects/${slug}`}>
                 <a>{title}</a>
               </Link>
