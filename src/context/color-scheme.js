@@ -13,7 +13,7 @@ export function useColorScheme() {
 }
 
 export function ColorSchemeProvider(props) {
-  const [colorScheme, setColorScheme] = useState('dark');
+  const [colorScheme, setColorScheme] = useState('light');
 
   const value = {
     colorScheme,

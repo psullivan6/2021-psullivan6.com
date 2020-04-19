@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useColorScheme } from '../../context/color-scheme';
 
 // Components
+import ContentContainer from '../ContentContainer';
 import ThemeToggle from '../ThemeToggle';
 
 // Styles
@@ -19,32 +20,34 @@ function Nav() {
 
   return (
     <NavContainer>
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
+      <ContentContainer>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
 
-        <li>
-          <Link href="/about">
-            <a>About Me</a>
-          </Link>
-        </li>
+          <li>
+            <Link href="/about">
+              <a>About Me</a>
+            </Link>
+          </li>
 
-        <li>
-          <Link href="/projects">
-            <a>Projects</a>
-          </Link>
-        </li>
-      </ul>
-      <ThemeToggle
-        onChange={handleSchemeChange}
-        colorScheme={colorScheme}
-        position="fixed"
-        top={4}
-        right={4}
-      />
+          <li>
+            <Link href="/projects">
+              <a>Projects</a>
+            </Link>
+          </li>
+        </ul>
+        <ThemeToggle
+          onChange={handleSchemeChange}
+          colorScheme={colorScheme}
+          position="fixed"
+          top={4}
+          right={4}
+        />
+      </ContentContainer>
     </NavContainer>
   );
 }

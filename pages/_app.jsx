@@ -5,6 +5,9 @@ import { ThemeProvider } from 'styled-components';
 import Nav from '../src/components/Nav';
 import Footer from '../src/sections/Footer';
 
+// Components
+import ContentContainer from '../src/components/ContentContainer';
+
 // Context
 import {
   ColorSchemeProvider,
@@ -24,9 +27,9 @@ function App({ Component, pageProps }) {
         <GlobalStyles />
         <Nav />
 
-        <main>
+        <ContentContainer as="main">
           <Component {...pageProps} />
-        </main>
+        </ContentContainer>
 
         <Footer />
       </ThemeProvider>
