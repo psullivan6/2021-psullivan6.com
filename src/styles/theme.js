@@ -7,6 +7,27 @@ breakpoints.m = breakpoints[2];
 breakpoints.l = breakpoints[3];
 breakpoints.xl = breakpoints[4];
 
+export const colorSchemes = {
+  light: {
+    background: '#fff',
+    primary: '#039',
+    primaryText: '#fff',
+    accent: '#3fc',
+    highlight: 'hsl(210, 18%, 90%)',
+    highlightText: '#333',
+    text: '#333',
+  },
+  dark: {
+    background: '#000',
+    primary: 'hsl(0, 0%, 15%)',
+    primaryText: '#cc9',
+    accent: '#36f',
+    highlight: '#ccc',
+    highlightText: '#333',
+    text: '#fff',
+  },
+};
+
 const theme = {
   breakpoints,
   mediaQueries: {
@@ -16,5 +37,12 @@ const theme = {
   },
   space: [0, 6, 9, 12, 24, 36, 48, 60, 90, 120],
 };
+
+export function getTheme(colorScheme) {
+  return {
+    ...theme,
+    colors: colorSchemes[colorScheme],
+  };
+}
 
 export default theme;

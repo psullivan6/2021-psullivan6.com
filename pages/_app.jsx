@@ -5,14 +5,22 @@ import { ThemeProvider } from 'styled-components';
 import Nav from '../src/components/Nav';
 import Footer from '../src/sections/Footer';
 
+// Context
+import {
+  ColorSchemeProvider,
+  useColorScheme,
+} from '../src/context/color-scheme';
+
 // Styles
 import GlobalStyles from '../src/styles/global';
-import theme from '../src/styles/theme';
+import { getTheme } from '../src/styles/theme';
 
 function App({ Component, pageProps }) {
+  const { colorScheme } = useColorScheme();
+
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={getTheme(colorScheme)}>
         <GlobalStyles />
         <Nav />
 
@@ -26,4 +34,12 @@ function App({ Component, pageProps }) {
   );
 }
 
-export default App;
+function WrappedApp(props) {
+  return (
+    <ColorSchemeProvider>
+      <App {...props} />
+    </ColorSchemeProvider>
+  );
+}
+
+export default WrappedApp;

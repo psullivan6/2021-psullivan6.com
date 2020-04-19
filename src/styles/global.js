@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
+// Utilities
+import themeGet from '../utilities/themeGet';
+
 const GlobalStyles = createGlobalStyle`
   html,
   body {
@@ -7,6 +10,12 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    background-color: ${themeGet('colors.background')};
+    color: ${themeGet('colors.text')};
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 `;
 

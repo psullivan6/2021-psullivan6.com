@@ -23,3 +23,8 @@ Leverage Google Sheets since it's easy, free, and serves my needs
 2. Export as `.csv` into the `src/data` directory
 3. Run the `yarn parse` command
 4. Voila
+
+## Resources
+
+- [styled-components](https://github.com/zeit/next.js/tree/canary/examples/with-styled-components) with Next.js example
+- https://usehooks.com/useDarkMode/
