@@ -4,6 +4,14 @@ import { createGlobalStyle } from 'styled-components';
 import themeGet from '../utilities/themeGet';
 
 const GlobalStyles = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
   html,
   body {
     width: 100%;

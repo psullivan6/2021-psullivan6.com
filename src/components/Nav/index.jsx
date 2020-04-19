@@ -41,9 +41,9 @@ function Nav() {
       <ThemeToggle
         onChange={handleSchemeChange}
         colorScheme={colorScheme}
-        position="absolute"
-        top={6}
-        right={9}
+        position="fixed"
+        top={4}
+        right={4}
       />
     </NavContainer>
   );

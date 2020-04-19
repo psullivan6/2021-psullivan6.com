@@ -5,7 +5,13 @@ import { colorSchemes } from '../../styles/theme';
 import Box from '../Box';
 
 // Styles
-import { Container, Inside, List, ListItem } from './styles';
+import {
+  Container,
+  Inside,
+  List,
+  ListItemLabel,
+  ListItemRadio,
+} from './styles';
 
 const ThemeToggle = ({ colorScheme, onChange, ...props }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,10 +20,11 @@ const ThemeToggle = ({ colorScheme, onChange, ...props }) => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleThemeSelection = (schemeKey) => {
-    onChange(schemeKey);
+  function handleChange(event) {
+    const { value } = event.target;
+    onChange(value);
     setMenuOpen(false);
-  };
+  }
 
   return (
     <Box {...props}>
@@ -33,15 +40,24 @@ const ThemeToggle = ({ colorScheme, onChange, ...props }) => {
       </Container>
       <List active={menuOpen}>
         {Object.keys(colorSchemes).map((schemeKey, index) => (
-          <ListItem
+          <ListItemLabel
             key={schemeKey}
             index={index}
-            active={schemeKey === colorScheme}
+            htmlFor={`ThemeToggle-${schemeKey}`}
+            name="colorScheme"
             colors={colorSchemes[schemeKey]}
-            onClick={() => handleThemeSelection(schemeKey)}
+            active={schemeKey === colorScheme}
           >
             {schemeKey}
-          </ListItem>
+            <ListItemRadio
+              id={`ThemeToggle-${schemeKey}`}
+              type="radio"
+              name="colorScheme"
+              value={schemeKey}
+              checked={schemeKey === colorScheme}
+              onChange={handleChange}
+            />
+          </ListItemLabel>
         ))}
       </List>
     </Box>

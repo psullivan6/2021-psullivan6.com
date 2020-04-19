@@ -26,6 +26,24 @@ export const colorSchemes = {
     highlightText: '#333',
     text: '#fff',
   },
+  paper: {
+    background: '#f7eed2',
+    primary: '#000',
+    primaryText: '#fff',
+    accent: '#f7eed2',
+    highlight: '#000',
+    highlightText: '#f7eed2',
+    text: '#000',
+  },
+  party: {
+    background: '#9fc',
+    primary: '#30f',
+    primaryText: '#ff9',
+    accent: '#ff0',
+    highlight: '#f0f',
+    highlightText: '#fff',
+    text: '#60c',
+  },
 };
 
 const theme = {
