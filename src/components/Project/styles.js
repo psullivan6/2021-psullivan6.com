@@ -5,7 +5,7 @@ import { StyledText } from '../../components/Text';
 
 export const StyledFigure = styled.figure`
   position: relative;
-  width: 90%;
+  width: calc(100% - ${themeGet('space.4')});
   border-radius: 0.5rem;
 
   &:after {

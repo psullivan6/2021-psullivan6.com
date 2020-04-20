@@ -1,32 +1,32 @@
 featured,slug,title,link,agency,client,type,role,tech-stack,excerpt,description,why,process,challenges,takeaways
-TRUE,bacon-insider,Bacon Insider Promotion,,Struck,Jack in the Box,Promotion,,"Vanilla JS
+TRUE,bacon-insider,Bacon Insider Promotion,,Struck,Jack in the Box,Promotion Page,,"Vanilla JS
 Ruby on Rails
 Haml
 CoffeeScript
 SCSS
 Heroku",,,,,Launching an immersive landing page on Super Bowl Sunday with millions of dollars in commercials driving to the website.,
-,jitb,Jackinthebox.com,https://www.jackinthebox.com/,Struck,Jack in the Box,Marketing,Developer,"Vanilla JS
+,jitb,jackinthebox.com,https://www.jackinthebox.com/,Struck,Jack in the Box,Marketing Website,Developer,"Vanilla JS
 Ruby on Rails
 Haml
 CoffeeScript
 SCSS
 Heroku",,Store Locator page and map clustering functionality,,,,
-TRUE,nas,,,Struck,Nick Animation Studio,Marketing,,"Bower.io
+TRUE,nas,nickanimation.com,,Struck,Nick Animation Studio,Marketing Website,,"Bower.io
 Gulp
 PHP / Laravel
 Jade (now Pug)
 SCSS
 RequireJS
 Vanilla JS",,,,,,
-TRUE,soundboard,Soundboard Promotion,,Union,Camel,Promotion,,"Laravel
+TRUE,soundboard,Soundboard Promotion,,Union,Camel,Promotion Microsite,,"Laravel
 React
 Vanilla JS",,"see .agency site, also https://github.com/psullivan6/open-sound",,,,
-,ttd,Through the Decades Promotion,,Union,Camel,Promotion,,"Styled components
+,ttd,Through the Decades Promotion,,Union,Camel,Promotion Microsite,,"Styled components
 Styled system
 React
 Craft CMS",,,,,,
-,ctm,Crush the Moment Promotion,,Union,Camel,Promotion,,,,Perhaps not include,,,,
-,starters,Project Starters,,,,Starter,,,,"Link to all the relevant starters, highlight react three fiber, system, and maybe 1 more that's recent",,,,
+,ctm,Crush the Moment Promotion,,Union,Camel,Promotion Microsite,,,,Perhaps not include,,,,
+,starters,Project Starters,,,,Starter Repo,,,,"Link to all the relevant starters, highlight react three fiber, system, and maybe 1 more that's recent",,,,
 ,portfolios,Portfolio Iterations,,,,,,,,All the various in-progress versions of my portfolio,,,,
 ,gst,Guided Selling Tool,,Union,GameTime,,,Craft Commerce,,"Short timeline, lots of custom form functionality",,,,
 ,presflow,Presentation Tool,,Union,ACBJ,,,"Next.js
