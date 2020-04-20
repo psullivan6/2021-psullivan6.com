@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 // Components
 import ContentContainer from '../../components/ContentContainer';
@@ -9,38 +8,44 @@ import LInkedInLogo from './components/LInkedInLogo';
 import TwitterLogo from './components/TwitterLogo';
 
 // Styles
-import { FooterContainer, FooterLinks, FooterLink } from './styles';
+import {
+  FooterContainer,
+  FooterList,
+  FooterListItem,
+  FooterLinks,
+  FooterLink,
+} from './styles';
 
 function Footer() {
   return (
     <FooterContainer>
       <ContentContainer>
         <FooterLinks>
-          <Text fontSize="0.75em">
+          <Text fontSize="0.75em" marginRight={3}>
             &copy; 2020 Patrick Sullivan. All Rights Reserved.
           </Text>
-          <ul>
-            <li>
+          <FooterList>
+            <FooterListItem>
               <FooterLink href="https://github.com/psullivan6" target="_blank">
                 <GitHubLogo width="1em" height="1em" />
               </FooterLink>
-            </li>
+            </FooterListItem>
 
-            <li>
+            <FooterListItem>
               <FooterLink
                 href="https://www.linkedin.com/in/psullivan6/"
                 target="_blank"
               >
                 <LInkedInLogo width="1em" height="1em" />
               </FooterLink>
-            </li>
+            </FooterListItem>
 
-            <li>
+            <FooterListItem>
               <FooterLink href="https://twitter.com/psullivan6" target="_blank">
                 <TwitterLogo width="1em" height="1em" />
               </FooterLink>
-            </li>
-          </ul>
+            </FooterListItem>
+          </FooterList>
         </FooterLinks>
       </ContentContainer>
     </FooterContainer>

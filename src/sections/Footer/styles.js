@@ -9,30 +9,37 @@ export const FooterContainer = styled.footer`
   color: ${themeGet('colors.grays.13')};
 `;
 
+export const FooterList = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+`;
+
+export const FooterListItem = styled.li`
+  &:not(:last-child) {
+    margin-right: ${themeGet('space.2')};
+  }
+`;
+
 export const FooterLinks = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.25em;
-
-    li:not(:last-child) {
-      margin-right: ${themeGet('space.2')};
-    }
-  }
 `;
 
 export const FooterLink = styled.a`
+  display: block;
   color: ${themeGet('colors.grays.18')};
 
   &:hover {
     color: ${themeGet('colors.grays.14')};
+  }
+
+  svg {
+    display: block;
   }
 `;

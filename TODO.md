@@ -9,3 +9,8 @@
 ## Organization
 
 - flatten the src directory into all root directories
+
+## Colors
+
+- Add link colors to theme (regular, visited, accent)
+- Add footer colors (background, text, icons)

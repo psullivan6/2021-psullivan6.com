@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { color, space, typography, variant } from 'styled-system';
+import { color, layout, space, typography, variant } from 'styled-system';
 
 export const variants = {
   small: {
@@ -17,6 +17,7 @@ export const variants = {
   },
   h6: {
     fontSize: '1rem',
+    fontFamily: `'Work Sans', sans-serif`,
   },
   h5: {
     fontSize: '1.25rem',
@@ -30,7 +31,6 @@ export const variants = {
   h2: {
     fontSize: '2.4375rem',
     fontFamily: `'Work Sans', sans-serif`,
-    textTransform: 'uppercase',
   },
   h1: {
     marginTop: 0,
@@ -48,6 +48,7 @@ export const StyledText = styled.p`
     variants,
   })}
   ${color};
+  ${layout};
   ${space};
   ${typography};
 `;

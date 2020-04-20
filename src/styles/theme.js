@@ -12,9 +12,11 @@ breakpoints.xl = breakpoints[4];
 const theme = {
   breakpoints,
   mediaQueries: {
-    small: `@media screen and (min-width: ${breakpoints.small})`,
-    medium: `@media screen and (min-width: ${breakpoints.medium})`,
-    large: `@media screen and (min-width: ${breakpoints.large})`,
+    xs: `@media screen and (min-width: ${breakpoints.xs})`,
+    s: `@media screen and (min-width: ${breakpoints.s})`,
+    m: `@media screen and (min-width: ${breakpoints.m})`,
+    l: `@media screen and (min-width: ${breakpoints.l})`,
+    xl: `@media screen and (min-width: ${breakpoints.xl})`,
   },
   space: [0, 6, 9, 12, 24, 36, 48, 60, 90, 120],
 };

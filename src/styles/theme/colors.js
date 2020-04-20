@@ -25,7 +25,7 @@ export const colorSchemes = {
     accent: '#36f',
     highlight: '#ccc',
     highlightText: '#333',
-    text: '#fff',
+    text: grays[22],
   },
   paper: {
     background: '#f7eed2',
