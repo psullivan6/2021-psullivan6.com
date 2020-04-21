@@ -4,6 +4,9 @@ import Link from 'next/link';
 // Services
 import { get } from '../src/services/projects';
 
+// Context
+import { usePartyMode } from '../src/context/color-scheme';
+
 // Components
 import Box from '../src/components/Box';
 import Grid from '../src/components/Grid';
@@ -33,6 +36,35 @@ const gridItemProps = [
 ];
 
 function HomePage({ projects }) {
+  const { isPartyMode } = usePartyMode();
+
+  function Salutation() {
+    if (isPartyMode) {
+      return <>👋Hai fraind, I&rsquo;m Patrick;</>;
+    }
+
+    return <>Hey I&rsquo;m Patrick,</>;
+  }
+
+  function Bio() {
+    if (isPartyMode) {
+      return (
+        <>
+          I build rad 💩 with wicked awesome technologies; I&rsquo;m supah
+          stoked about web dev; I use two-spaces and semi-colons and I&rsquo;ll
+          die on those hills;
+        </>
+      );
+    }
+
+    return (
+      <>
+        I&rsquo;m a Tech Lead in Charlotte, NC and I build awesome websites and
+        lead talented Developers.
+      </>
+    );
+  }
+
   return (
     <Page>
       <Box as="section" py={8}>
@@ -45,11 +77,10 @@ function HomePage({ projects }) {
           maxWidth="20em"
         >
           <Text as="span" display="block" fontWeight={600} marginBottom={2}>
-            Hey I&rsquo;m Patrick,
+            <Salutation />
           </Text>
           <Text as="span" variant="h4">
-            I&rsquo;m a Tech Lead in Charlotte, NC and I build awesome websites
-            and lead talented Developers.
+            <Bio />
           </Text>
         </Text>
         <Link href="/about" passHref>
@@ -59,7 +90,7 @@ function HomePage({ projects }) {
 
       <Box as="section" pb={8}>
         <Text as="h1" variant="h2">
-          Projects
+          {isPartyMode ? 'Sick Prahjex' : 'Projects'}
         </Text>
         <Grid>
           {projects.map(({ slug, title, type }, index) => (

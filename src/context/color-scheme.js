@@ -12,6 +12,16 @@ export function useColorScheme() {
   return context;
 }
 
+export function usePartyMode() {
+  const context = useContext(ColorSchemeContext);
+
+  if (!context) {
+    throw new Error('useColorScheme must be used within a ColorSchemeProvider');
+  }
+
+  return { isPartyMode: context.colorScheme === 'party' };
+}
+
 export function ColorSchemeProvider(props) {
   const [colorScheme, setColorScheme] = useState('light');
 
