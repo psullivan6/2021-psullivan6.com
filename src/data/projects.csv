@@ -1,36 +1,39 @@
-featured,slug,title,link,agency,client,type,role,tech-stack,excerpt,description,why,process,challenges,takeaways
+featured,slug,title,link,agency,client,type,role,tech,excerpt,description,links,images,why,process,challenges,takeaways
 TRUE,bacon-insider,Bacon Insider Promotion,,Struck,Jack in the Box,Promotion Page,,"Vanilla JS
 Ruby on Rails
 Haml
 CoffeeScript
 SCSS
-Heroku",,,,,Launching an immersive landing page on Super Bowl Sunday with millions of dollars in commercials driving to the website.,
+Heroku
+GSAP Animation",,"Our team at Struck was tasked with designing and building a full digital promotion experience to showcase the new Bacon Insider Burger; a burger, with bacon INSIDE the patty 🤯. We shipped an awesome landing page, from GSAP scroll-based animations of curly fry trees to a custom asteroids game I built where you fly a bork and shoot bacon at floating burgers. This is peak on-brand Jack in the Box and was a blast to build!","Watch the commercial | https://www.ispot.tv/ad/7TF_/jack-in-the-box-bacon-insider-super-bowl-2014-moink
+Homepage (at the time) | https://web.archive.org/web/20140203171252/http://www.jackinthebox.com/",#REF!,,,Launching an immersive landing page on Super Bowl Sunday with millions of dollars in commercials driving to the website.,
 ,jitb,jackinthebox.com,https://www.jackinthebox.com/,Struck,Jack in the Box,Marketing Website,Developer,"Vanilla JS
 Ruby on Rails
 Haml
 CoffeeScript
 SCSS
-Heroku",,Store Locator page and map clustering functionality,,,,
+Heroku",,Store Locator page and map clustering functionality,,,,,,
 TRUE,nas,nickanimation.com,,Struck,Nick Animation Studio,Marketing Website,,"Bower.io
 Gulp
 PHP / Laravel
 Jade (now Pug)
 SCSS
 RequireJS
-Vanilla JS",,,,,,
-TRUE,soundboard,Soundboard Promotion,,Union,Camel,Promotion Microsite,,"Laravel
+Vanilla JS
+GSAP Animation",,"While I had a more limited development role on this project, I built a couple really cool features including the global navigation as well as a custom abstracted character carousel. The carousel was a challenge to build, but proved to be a fun and effective way to communicate the breadth of NAS characters over the years. Thankfully, it still lives on the site today even after a couple re-designs.",,,,,,
+TRUE,soundboard,Soundboard Promotion,,Union,NDA (Fortune 500 Tobacco Company),Promotion Microsite,,"Laravel
 React
-Vanilla JS",,"see .agency site, also https://github.com/psullivan6/open-sound",,,,
-,ttd,Through the Decades Promotion,,Union,Camel,Promotion Microsite,,"Styled components
+Vanilla JS",,"This project is by far one of the most complex and uniquely interactive projects I've ever had the pleasure to build. The experience featured a custom sound board where the user could create their own beats, visualize their creation, and enter to win prizes. We far exceeded client expectations and help bring a big jump in user interaction not seen for previos promotions. Go ahead, [make a beat](http://work.union.agency/beats-by-union/)",,,,,,
+,ttd,Through the Decades Promotion,,Union,NDA (Fortune 500 Tobacco Company),Promotion Microsite,,"Styled components
 Styled system
 React
-Craft CMS",,,,,,
-,ctm,Crush the Moment Promotion,,Union,Camel,Promotion Microsite,,,,Perhaps not include,,,,
-,starters,Project Starters,,,,Starter Repo,,,,"Link to all the relevant starters, highlight react three fiber, system, and maybe 1 more that's recent",,,,
-,portfolios,Portfolio Iterations,,,,,,,,All the various in-progress versions of my portfolio,,,,
-,gst,Guided Selling Tool,,Union,GameTime,,,Craft Commerce,,"Short timeline, lots of custom form functionality",,,,
+Craft CMS",,,,,,,,
+,ctm,Crush the Moment Promotion,,Union,NDA (Fortune 500 Tobacco Company),Promotion Microsite,,,,Perhaps not include,,,,,,
+,starters,Project Starters,,,,Starter Repo,,,,"Link to all the relevant starters, highlight react three fiber, system, and maybe 1 more that's recent",,,,,,
+,portfolios,Portfolio Iterations,,,,,,,,All the various in-progress versions of my portfolio,,,,,,
+,gst,Guided Selling Tool,,Union,GameTime,,,Craft Commerce,,"Short timeline, lots of custom form functionality",,,,,,
 ,presflow,Presentation Tool,,Union,ACBJ,,,"Next.js
-Now.sh
+ZEIT Now.sh
 Yarn workspaces
 Typescript
 React
@@ -38,19 +41,19 @@ REST API integration
 PHP
 Craft CMS
 CI/CD
-React Router",,,,,,
-,ar-experiment,AR Experiment,,Union,Innovation,,,,,,,,,
-,process,Process + Planning,,Union,Union,,,,,"Git Workflow, weekly F/E Focus, kanban template, GitLab workflow, other write-ups",,,,
-,design-system,Design System,,Union,Playcore,,,Material UI,,,,,,
-TRUE,logos,Championship Logos,,,Pac-12,,,,,"Show all the logos, talk about the story of how I got signed on",,,,
-,grand-america,Landing Page,,Struck,Grand America Hotels & Resorts,,,,,,,,,
+React Router",,,,,,,,
+,ar-experiment,AR Experiment,,Union,Innovation,,,,,,,,,,,
+,process,Process + Planning,,Union,Union,,,,,"Git Workflow, weekly F/E Focus, kanban template, GitLab workflow, other write-ups",,,,,,
+,design-system,Design System,,Union,Playcore,,,Material UI,,,,,,,,
+TRUE,logos,Championship Logos,,Freelance,Pac-12,Design,,,,"I love logo design and my Oregon Ducks and those two paths crossed in a whirlwind of amazing projects from THEEE Pac-12. I was given an amazing opportunity to design the inaugural Pac-12 Football Championship logo, which won a public competetion and was emblazoned all over Autzen Stadium where I sat watching my Oregon Ducks win that first ever championship game; the first of many. I continued my freelance work for the Pac-12 designing logos and finished with the updated Football Championship logo that you see today. ",,,,,,
+,grand-america,Landing Page,,Struck,Grand America Hotels & Resorts,,,,,,,,,,,
 ,struck-com,struck.com,,Struck,Struck,,,"Node JS
 MongoDB
 BackboneJS
 RequireJS
 SCSS
-Heroku",,,,,,
-,run-map,Nike Map,,,,,,,,"Built in a weekend, idea to reality quickly, get outside more now",,,,
-,3d,Misc. 3D projects,,,,,,,,"cyber-fiber, starter-r3f, next-three-fiber",,,,
-,color-study,Color Study,,,,,,,,"large data set, filtering, interaction with array-based data",,,,
-,split-video,Split Video,,,Experiments,Experiment,,,,,,,,
+Heroku",,,,,,,,
+,run-map,Nike Map,,,,,,,,"Built in a weekend, idea to reality quickly, get outside more now",,,,,,
+,3d,Misc. 3D projects,,,,,,,,"cyber-fiber, starter-r3f, next-three-fiber",,,,,,
+,color-study,Color Study,,,,,,,,"large data set, filtering, interaction with array-based data",,,,,,
+,split-video,Split Video,,,Experiments,Experiment,,,,,,,,,,

@@ -9,11 +9,10 @@ export const variants = {
   p: {
     fontSize: '1rem',
     fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
-    lineHeight: 1.25,
-    letterSpacing: '0.01em',
+    lineHeight: 1.75,
+    letterSpacing: '0.05em',
     maxWidth: '30em',
-    fontWeight: 300,
-    color: '#666',
+    fontWeight: 400,
   },
   h6: {
     fontSize: '1rem',
@@ -35,11 +34,14 @@ export const variants = {
   h1: {
     marginTop: 0,
     fontSize: '3.0625rem',
-    fontFamily: 'Georgia, serif',
+    fontFamily: 'serif',
+    // fontFamily: `Cambria, Cochin, Georgia, Times, 'Times New Roman', serif`,
   },
-  title: {
-    marginTop: 0,
-    fontSize: '3.0625rem',
+  eyebrow: {
+    fontSize: '1rem',
+    fontFamily: `'Work Sans', sans-serif`,
+    fontWeight: 600,
+    textTransform: 'uppercase',
   },
 };
 

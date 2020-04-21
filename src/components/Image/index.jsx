@@ -1,12 +1,37 @@
 import React from 'react';
 
-const Image = ({ alt, src, fallback, type = 'image/webp', ...props }) => {
+// Styles
+import {
+  StyledFigure,
+  StyledFigCaption,
+  StyledImage,
+  StyledPicture,
+} from './styles';
+
+function Picture({ alt, src, fallback, type = 'image/webp', ...props }) {
   return (
-    <picture>
+    <StyledPicture>
       <source srcSet={src} type={type} />
-      <img alt={alt} src={fallback} {...props} />
-    </picture>
+      <StyledImage alt={alt} src={fallback} {...props} />
+    </StyledPicture>
   );
-};
+}
+
+function Figure(props) {
+  return (
+    <StyledFigure>
+      <Picture {...props} />
+      <StyledFigCaption>{props.alt}</StyledFigCaption>
+    </StyledFigure>
+  );
+}
+
+function Image({ withFigure = false, ...props }) {
+  if (withFigure) {
+    return <Figure {...props} />;
+  }
+
+  return <Picture {...props} />;
+}
 
 export default Image;

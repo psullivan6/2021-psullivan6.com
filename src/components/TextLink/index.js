@@ -7,6 +7,7 @@ const TextLink = styled.a`
   position: relative;
   font-family: Work Sans, sans-serif;
   font-weight: 600;
+  line-height: 1;
   cursor: pointer;
   text-decoration: none;
 
@@ -19,13 +20,13 @@ const TextLink = styled.a`
     width: 110%;
     height: 30%;
     background-color: ${themeGet('colors.accent')};
-    transform: skewY(-3deg) translateY(60%);
+    transform: skewY(-1.5deg) translateY(90%);
     border-radius: 0.25em 0;
     transition: transform 0.3s ease, height 0.3s ease;
   }
 
   &:hover::after {
-    transform: skewY(-3deg) translateY(-20%);
+    transform: skewY(-1.5deg) translateY(-20%);
     height: 60%;
   }
 `;

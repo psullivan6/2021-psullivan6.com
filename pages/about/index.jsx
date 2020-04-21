@@ -22,7 +22,7 @@ function AboutPage({ tech }) {
 export async function getStaticProps() {
   const projects = await get();
   const tech = projects
-    .map((project) => project['tech-stack'])
+    .map((project) => project.tech)
     .flat()
     .filter((item) => item !== '')
     .sort();

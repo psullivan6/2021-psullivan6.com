@@ -14,3 +14,4 @@
 
 - Add link colors to theme (regular, visited, accent)
 - Add footer colors (background, text, icons)
+- Add textAccent for eyebrow color

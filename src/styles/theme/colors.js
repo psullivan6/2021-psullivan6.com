@@ -1,3 +1,4 @@
+// [TODO] Figure this out for each color scheme
 const grays = Array(24)
   .fill('')
   .map((_, index, arr) => {
@@ -17,6 +18,7 @@ export const colorSchemes = {
     highlight: 'hsl(210, 18%, 90%)',
     highlightText: '#333',
     text: '#333',
+    textAccent: '#036',
   },
   dark: {
     background: '#000',
@@ -25,7 +27,8 @@ export const colorSchemes = {
     accent: '#36f',
     highlight: '#ccc',
     highlightText: '#333',
-    text: grays[22],
+    text: grays[18],
+    textAccent: '#039',
   },
   paper: {
     background: '#f7eed2',

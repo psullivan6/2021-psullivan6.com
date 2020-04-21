@@ -25,12 +25,22 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${themeGet('colors.background')};
     color: ${themeGet('colors.text')};
     transition: background-color 0.25s ease, color 0.25s ease;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: Work Sans, sans-serif;
   }
 
   ::selection {
     background-color: ${themeGet('colors.highlight')};
     color: ${themeGet('colors.highlightText')};
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      line-height: 1.75;
+    }
   }
 `;
 
