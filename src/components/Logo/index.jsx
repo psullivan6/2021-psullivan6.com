@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Box } from '../index';
+import Box from '../Box';
 
-const Logo = props => (
+const Logo = (props) => (
   <Box
     as="svg"
     display="block"

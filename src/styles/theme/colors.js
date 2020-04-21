@@ -42,7 +42,7 @@ export const colorSchemes = {
   party: {
     background: '#9fc',
     primary: '#30f',
-    primaryText: '#ff9',
+    primaryText: '#f90',
     accent: '#ff0',
     highlight: '#f0f',
     highlightText: '#fff',
