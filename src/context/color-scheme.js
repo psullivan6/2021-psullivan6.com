@@ -1,4 +1,8 @@
-import React, { createContext, useContext, useState } from 'react';
+//
+// [TODO] Remove this in favor of css variables? keep party mode?
+//
+
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const ColorSchemeContext = createContext();
 
@@ -24,6 +28,10 @@ export function usePartyMode() {
 
 export function ColorSchemeProvider(props) {
   const [colorScheme, setColorScheme] = useState('light');
+
+  useEffect(() => {
+    setColorScheme(localStorage.getItem('color-scheme'));
+  }, []);
 
   const value = {
     colorScheme,

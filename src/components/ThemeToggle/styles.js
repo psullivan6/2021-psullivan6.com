@@ -14,7 +14,7 @@ export const Inside = styled.div`
   height: 1.5em;
   margin: 0.25em;
   border-radius: 50%;
-  background-color: ${themeGet('colors.primaryText')};
+  background-color: var(--colors-primaryText);
   clip-path: url(#themeToggleCurve);
   transition: background-color 0.6s ease;
 `;
@@ -31,7 +31,7 @@ export const ListItemRadio = styled.input`
   margin: 0 0 0 ${themeGet('space.1')};
   padding: 0;
   border-radius: 50%;
-  border: 0.125em solid ${themeGet('colors.primaryText')};
+  border: 0.125em solid var(--colors-primaryText);
   font-size: inherit;
 
   &:checked::after {
@@ -43,7 +43,7 @@ export const ListItemRadio = styled.input`
     width: 0.75em;
     height: 0.75em;
     border-radius: 50%;
-    background-color: ${themeGet('colors.primaryText')};
+    background-color: var(--colors-primaryText);
   }
 `;
 
@@ -103,17 +103,17 @@ export const Container = styled.button`
   padding: 0;
   outline: none;
   background: none;
-  border: 0.125em solid ${themeGet('colors.primaryText')};
+  border: 0.125em solid var(--colors-primaryText);
   border-radius: 50%;
   font-size: 1em;
   transition: background-color 0.6s ease, border-color 0.6s ease;
   cursor: pointer;
 
   &:hover {
-    border-color: ${themeGet('colors.accent')};
+    border-color: var(--colors-accent);
 
     ${Inside} {
-      background-color: ${themeGet('colors.accent')};
+      background-color: var(--colors-accent);
     }
   }
 `;

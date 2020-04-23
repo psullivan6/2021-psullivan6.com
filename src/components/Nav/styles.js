@@ -7,7 +7,7 @@ import Box from '../Box';
 export const NavContainer = styled(Box).attrs(() => ({
   as: 'nav',
 }))`
-  background-color: ${themeGet('colors.primary')};
+  background-color: var(--colors-primary);
   color: white;
   padding: ${themeGet('space.6')} ${themeGet('space.3')};
   transition: padding 0.3s ease, background-color 0.25s ease;
@@ -44,7 +44,7 @@ export const NavListItem = styled.li`
 `;
 
 export const StyledNavLink = styled.a`
-  color: ${themeGet('colors.primaryText')};
+  color: var(--colors-primaryText);
   font-weight: 900;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -54,6 +54,6 @@ export const StyledNavLink = styled.a`
   ${(props) =>
     props.isActive &&
     `
-    color: ${themeGet('colors.accent')(props)};
+    color: var(--colors-accent);
   `}
 `;

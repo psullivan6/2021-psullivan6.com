@@ -6,6 +6,16 @@ import themeGet from '../utilities/themeGet';
 const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
+
+    /* Light color scheme as default */
+    --colors-background: #fff;
+    --colors-primary: #039;
+    --colors-primaryText: #fff;
+    --colors-accent: #3fc;
+    --colors-highlight: hsl(210, 18%, 90%);
+    --colors-highlightText: #333;
+    --colors-text: #333;
+    --colors-textAccent: #036;
   }
 
   *, *:before, *:after {
@@ -22,16 +32,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: ${themeGet('colors.background')};
-    color: ${themeGet('colors.text')};
+    background-color: var(--colors-background);
+    color: var(--colors-text);
     transition: background-color 0.25s ease, color 0.25s ease;
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-family: Work Sans, sans-serif;
   }
 
   ::selection {
-    background-color: ${themeGet('colors.highlight')};
-    color: ${themeGet('colors.highlightText')};
+    background-color: var(--colors-highlight);
+    color: var(--colors-highlightText);
   }
 
   ul {

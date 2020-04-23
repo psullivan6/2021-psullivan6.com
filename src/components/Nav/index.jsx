@@ -12,7 +12,9 @@ import ThemeToggle from '../ThemeToggle';
 
 // Styles
 import { NavContainer, NavList, NavListItem, StyledNavLink } from './styles';
+import { colorSchemes } from '../../styles/theme/colors';
 
+// [TODO] Perhaps make this non-dynamic, opting to try...catch the window listener
 const DynamicCurveBox = dynamic(() => import('./components/CurveBox'), {
   loading: () => null,
   ssr: false,
@@ -24,6 +26,17 @@ function Nav() {
 
   function handleSchemeChange(newColorScheme) {
     setColorScheme(newColorScheme);
+
+    localStorage.setItem('color-scheme', newColorScheme);
+
+    function schemeLoop(key) {
+      document.documentElement.style.setProperty(
+        `--colors-${key}`,
+        colorSchemes[newColorScheme][key]
+      );
+    }
+
+    Object.keys(colorSchemes[newColorScheme]).forEach(schemeLoop);
   }
 
   return (

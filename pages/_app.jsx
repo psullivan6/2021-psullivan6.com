@@ -29,6 +29,7 @@ function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;900&display=swap"
           rel="stylesheet"
         />
+        <script src="/js/color-scheme.js"></script>
       </Head>
       <ThemeProvider theme={getTheme(colorScheme)}>
         <GlobalStyles />

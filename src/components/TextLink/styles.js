@@ -19,7 +19,7 @@ export const StyledTextLink = styled.a`
     left: -5%;
     width: 110%;
     height: 20%;
-    background-color: ${themeGet('colors.accent')};
+    background-color: var(--colors-accent);
     transform: skewY(-1.5deg) translateY(180%);
     border-radius: 0.25em 0;
     transition: transform 0.3s ease, height 0.3s ease;
