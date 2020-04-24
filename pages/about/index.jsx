@@ -1,35 +1,33 @@
 import React from 'react';
 
 // Services
-import { get } from '../../src/services/projects';
+// import { get as getProjects } from '../../src/services/projects';
+import { get } from '../../src/services/tech';
 
 // Components
+import Chip from '../../src/components/Chip';
 import Page from '../../src/components/Page';
 
-function AboutPage({ tech }) {
+function AboutPage({ colors, tech }) {
   return (
     <Page title="About">
       <h1>About Content Here</h1>
       <ul>
-        {tech.map((item) => (
-          <li>{item}</li>
-        ))}
+        {tech.map((item) => {
+          return <Chip color={colors[item.type]}>{item.name}</Chip>;
+        })}
       </ul>
     </Page>
   );
 }
 
 export async function getStaticProps() {
-  const projects = await get();
-  const tech = projects
-    .map((project) => project.tech)
-    .flat()
-    .filter((item) => item !== '')
-    .sort();
+  const { data, colors } = await get();
 
   return {
     props: {
-      tech: [...new Set([...tech])],
+      tech: data,
+      colors,
     },
   };
 }
