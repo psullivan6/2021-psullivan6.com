@@ -14,7 +14,7 @@ export const colorSchemes = {
     background: '#fff',
     primary: '#039',
     primaryText: '#fff',
-    accent: '#3fc',
+    accent: '#fc3',
     highlight: 'hsl(210, 18%, 90%)',
     highlightText: '#333',
     text: '#333',

@@ -58,6 +58,7 @@ function Nav() {
               </ActiveLink>
             </NavListItem>
           </NavList>
+
           <ThemeToggle
             onChange={handleSchemeChange}
             colorScheme={colorScheme}
@@ -67,7 +68,7 @@ function Nav() {
           />
         </ContentContainer>
       </NavContainer>
-      <CurveBox navContainerRef={root} mb={6} />
+      <CurveBox navContainerRef={root} mb={8} />
     </>
   );
 }

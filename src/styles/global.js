@@ -7,11 +7,13 @@ const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
 
+    --colors-blur: #234ffc;
+
     /* Light color scheme as default */
     --colors-background: #fff;
     --colors-primary: #039;
     --colors-primaryText: #fff;
-    --colors-accent: #3fc;
+    --colors-accent: #fc3;
     --colors-highlight: hsl(210, 18%, 90%);
     --colors-highlightText: #333;
     --colors-text: #333;

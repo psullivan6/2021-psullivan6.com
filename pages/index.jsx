@@ -67,15 +67,14 @@ function HomePage({ projects }) {
 
   return (
     <Page>
-      <Box as="section" py={8}>
+      <Box as="section" pb={8}>
         <Text
           as="h1"
           variant="h3"
           fontFamily="Work Sans, sans-serif"
           fontWeight={400}
           letterSpacing="-0.05em"
-          maxWidth="20em"
-        >
+          maxWidth="20em">
           <Text as="span" display="block" fontWeight={600} marginBottom={2}>
             <Salutation />
           </Text>

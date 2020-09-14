@@ -19,9 +19,6 @@ const Project = ({
   excerpt,
   ...props
 }) => {
-  console.log('props', props);
-  console.log('title', title);
-
   return (
     <Container align={align} color={color}>
       <StyledFigure color={color}>
