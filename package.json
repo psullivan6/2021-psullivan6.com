@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "parse": "node ./scripts/parse.js"
+    "start": "next start"
   },
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",

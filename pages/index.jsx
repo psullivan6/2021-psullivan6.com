@@ -93,17 +93,17 @@ function HomePage({ projects }) {
           {isPartyMode ? 'Sick Prahjex' : 'Projects'}
         </Text>
         <Grid>
-          {projects.map(({ slug, title, type }, index) => (
+          {projects.map(({ slug, type, ...project }, index) => (
             <GridItem key={slug} {...gridItemProps[index]}>
               <Link href={`/projects/${slug}`} passHref>
                 <Box as="a" display="block">
                   <Project
                     src={gridItemProps[index].image}
                     alt="Jack in the Box Buttery Jack Burger"
-                    title={title}
                     eyebrow={type}
                     color="#01b1f0"
                     align="end"
+                    {...project}
                   />
                 </Box>
               </Link>

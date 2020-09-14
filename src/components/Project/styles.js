@@ -5,8 +5,8 @@ import { StyledText } from '../../components/Text';
 
 export const StyledFigure = styled.figure`
   position: relative;
-  width: calc(100% - ${themeGet('space.4')});
-  border-radius: 0.5rem;
+  /* width: calc(100% - ${themeGet('space.4')}); */
+  /* border-radius: 0.5rem; */
 
   &:after {
     content: '';
@@ -22,8 +22,9 @@ export const StyledFigure = styled.figure`
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 32px -6px ${(props) => darken(0.3, saturate(0.2, props.color))};
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 0 10px 32px -6px ${(props) =>
+      darken(0.3, saturate(0.2, props.color))}; */
   }
 
   picture,
@@ -34,7 +35,7 @@ export const StyledFigure = styled.figure`
     width: 100%;
     margin: 0;
     padding: 0;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
   }
 `;
 
@@ -47,11 +48,21 @@ export const SubHeadline = styled(StyledText).attrs(() => ({
   as: 'h2',
 }))``;
 
+export const Excerpt = styled(StyledText).attrs(() => ({
+  as: 'p',
+}))`
+  display: none;
+  line-height: 1.2;
+`;
+
 export const Header = styled.header`
   z-index: 2;
   position: absolute;
-  bottom: ${themeGet('space.4')};
+  /* bottom: -${themeGet('space.4')}; */
+  margin: ${themeGet('space.4')};
+  bottom: 0;
   width: 80%;
+  color: black;
 
   ${Headline},
   ${SubHeadline} {
@@ -62,22 +73,24 @@ export const Header = styled.header`
   }
 
   ${Headline} {
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 1.2;
-    text-transform: uppercase;
+    font-family: serif;
+    /* text-transform: uppercase; */
 
     span {
-      background-color: ${(props) => darken(0.2, saturate(0.2, props.color))};
+      /* background-color: ${(props) =>
+        darken(0.2, saturate(0.2, props.color))}; */
       display: inline;
-      padding: 0.1rem 0.4rem;
+      /* padding: 0.1rem 0.4rem; */
       line-height: inherit;
-      color: ${(props) =>
+      /* color: ${(props) =>
         meetsContrastGuidelines(
           darken(0.2, saturate(0.2, props.color)),
           '#ffffff'
         ).AA
           ? 'white'
-          : 'black'};
+          : 'black'}; */
 
       /* Needs prefixing */
       box-decoration-break: clone;
@@ -86,9 +99,13 @@ export const Header = styled.header`
   }
 
   ${SubHeadline} {
+    display: inline;
     letter-spacing: -0.025em;
     font-size: 0.875rem;
     line-height: ${themeGet('space.4')};
+    color: white;
+    padding: 0.1rem 0.4rem;
+    background-color: ${(props) => darken(0.2, saturate(0.2, props.color))};
   }
 `;
 
@@ -96,6 +113,12 @@ export const Container = styled.div`
   position: relative;
   /* background-color: ${(props) => props.color}; */
   background-color: transparent;
+
+  &:hover {
+    ${Excerpt} {
+      display: block;
+    }
+  }
 
   ${(props) =>
     props.align === 'start' &&

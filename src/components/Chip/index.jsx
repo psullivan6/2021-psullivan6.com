@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles
-import { StyledChip } from './styles';
+import { StyledChip, Dot } from './styles';
 
 function Chip({ color, children }) {
   function handleClick(event) {
@@ -9,7 +9,8 @@ function Chip({ color, children }) {
   }
 
   return (
-    <StyledChip as="button" color={color} onClick={handleClick}>
+    <StyledChip as="button" chipColor={color} onClick={handleClick}>
+      <Dot color={color} />
       {children}
     </StyledChip>
   );

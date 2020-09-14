@@ -30,6 +30,7 @@ export const variants = {
   h2: {
     fontSize: '2.4375rem',
     fontFamily: `'Work Sans', sans-serif`,
+    fontWeight: 600,
   },
   h1: {
     marginTop: 0,

@@ -16,6 +16,8 @@ const GlobalStyles = createGlobalStyle`
     --colors-highlightText: #333;
     --colors-text: #333;
     --colors-textAccent: #036;
+
+    background-color: var(--colors-primary);
   }
 
   *, *:before, *:after {
@@ -26,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   body,
   #__next{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
   }

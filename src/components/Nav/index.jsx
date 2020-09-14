@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import dynamic from 'next/dynamic';
 
 // Context
 import { useColorScheme } from '../../context/color-scheme';
@@ -9,16 +8,11 @@ import ContentContainer from '../ContentContainer';
 import Logo from '../Logo';
 import ActiveLink from '../ActiveLink';
 import ThemeToggle from '../ThemeToggle';
+import CurveBox from './components/CurveBox';
 
 // Styles
 import { NavContainer, NavList, NavListItem, StyledNavLink } from './styles';
 import { colorSchemes } from '../../styles/theme/colors';
-
-// [TODO] Perhaps make this non-dynamic, opting to try...catch the window listener
-const DynamicCurveBox = dynamic(() => import('./components/CurveBox'), {
-  loading: () => null,
-  ssr: false,
-});
 
 function Nav() {
   const root = useRef();
@@ -73,7 +67,7 @@ function Nav() {
           />
         </ContentContainer>
       </NavContainer>
-      <DynamicCurveBox navContainerRef={root} />
+      <CurveBox navContainerRef={root} mb={6} />
     </>
   );
 }

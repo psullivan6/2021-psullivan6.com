@@ -4,6 +4,8 @@ import themeGet from '../../utilities/themeGet';
 // Components
 import Box from '../Box';
 
+export const navHeight = 288; // = 96 logo height + 12 logo offset + (2 * 90 NavContainer padding)
+
 export const NavContainer = styled(Box).attrs(() => ({
   as: 'nav',
 }))`
@@ -32,10 +34,11 @@ export const NavList = styled.ul`
 export const NavListItem = styled.li`
   order: ${(props) => (props.primary ? 2 : 1)};
 
+  /* ensure text is vertically aligned with "D" part of logo */
   ${(props) =>
     props.primary &&
     `
-    margin-top: ${themeGet('space.4')(props)};
+    margin-top: ${themeGet('space.3')(props)};
   `}
 
   ${themeGet('mediaQueries.s')} {
