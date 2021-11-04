@@ -22,7 +22,8 @@ function Footer() {
       <ContentContainer>
         <FooterLinks>
           <Text fontSize="0.75em" marginRight={3}>
-            &copy; 2020 Patrick Sullivan. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Patrick Sullivan. All Rights
+            Reserved.
           </Text>
           <FooterList>
             <FooterListItem>
@@ -34,8 +35,7 @@ function Footer() {
             <FooterListItem>
               <FooterLink
                 href="https://www.linkedin.com/in/psullivan6/"
-                target="_blank"
-              >
+                target="_blank">
                 <LInkedInLogo width="1em" height="1em" />
               </FooterLink>
             </FooterListItem>

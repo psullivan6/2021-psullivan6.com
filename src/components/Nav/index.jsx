@@ -6,7 +6,7 @@ import { useColorScheme } from '../../context/color-scheme';
 // Components
 import ContentContainer from '../ContentContainer';
 import Logo from '../Logo';
-import ActiveLink from '../ActiveLink';
+import ActiveNavLink from '../ActiveNavLink';
 import ThemeToggle from '../ThemeToggle';
 import CurveBox from './components/CurveBox';
 
@@ -39,23 +39,23 @@ function Nav() {
         <ContentContainer>
           <NavList>
             <NavListItem>
-              <ActiveLink href="/about" passHref>
+              <ActiveNavLink href="/about" passHref>
                 <StyledNavLink>About Me</StyledNavLink>
-              </ActiveLink>
+              </ActiveNavLink>
             </NavListItem>
 
             <NavListItem primary>
-              <ActiveLink href="/" passHref>
+              <ActiveNavLink href="/" passHref>
                 <StyledNavLink>
                   <Logo mx={6} />
                 </StyledNavLink>
-              </ActiveLink>
+              </ActiveNavLink>
             </NavListItem>
 
             <NavListItem>
-              <ActiveLink href="/projects" passHref>
+              <ActiveNavLink href="/projects" passHref>
                 <StyledNavLink>Projects</StyledNavLink>
-              </ActiveLink>
+              </ActiveNavLink>
             </NavListItem>
           </NavList>
 

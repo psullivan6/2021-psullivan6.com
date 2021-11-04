@@ -59,4 +59,8 @@ export const StyledNavLink = styled.a`
     `
     color: var(--colors-accent);
   `}
+
+  &:hover {
+    color: var(--colors-highlight);
+  }
 `;

@@ -2,11 +2,12 @@ import React from 'react';
 
 // Components
 import Page from '../../src/components/Page';
+import Text from '../../src/components/Text';
 
 function UsesPage() {
   return (
     <Page title="Uses">
-      <h1>Uses Content Here</h1>
+      <Text as="h1">Uses Content Here</Text>
 
       <section>
         <h1>Development</h1>

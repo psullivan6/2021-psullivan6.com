@@ -1,23 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 
 // Utilities
-import themeGet from '../utilities/themeGet';
+import { colorSchemes } from './theme/colors';
+
+const defaultTheme = colorSchemes.light;
 
 const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
-
-    --colors-blur: #234ffc;
-
-    /* Light color scheme as default */
-    --colors-background: #fff;
-    --colors-primary: #039;
-    --colors-primaryText: #fff;
-    --colors-accent: #fc3;
-    --colors-highlight: hsl(210, 18%, 90%);
-    --colors-highlightText: #333;
-    --colors-text: #333;
-    --colors-textAccent: #036;
+    --colors-background: ${defaultTheme.background};
+    --colors-primary: ${defaultTheme.primary};
+    --colors-primaryText: ${defaultTheme.primaryText};
+    --colors-accent: ${defaultTheme.accent};
+    --colors-highlight: ${defaultTheme.highlight};
+    --colors-highlightText: ${defaultTheme.highlightText};
+    --colors-text: ${defaultTheme.text};
+    --colors-textAccent: ${defaultTheme.textAccent};
 
     background-color: var(--colors-primary);
   }
